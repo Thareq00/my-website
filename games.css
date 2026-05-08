@@ -5,78 +5,15 @@ html {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-/* RESPONSIVE MOBILE */
-@media screen and (max-width: 768px){
 
-  .main-wrapper{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 20px;
-  }
-
-  .side-slideshow{
-    position: relative;
-    top: 0;
-    width: 100%;
-    max-width: 350px;
-    height: 250px;
-    margin: auto;
-  }
-
-  .game-header h1{
-    font-size: 28px;
-  }
-
-  .game-header p{
-    font-size: 14px;
-  }
-
-  .game-content{
-    grid-template-columns: 1fr;
-  }
-
-  .game-card{
-    width: 100%;
-  }
-
-  .game-img{
-    height: 200px;
-  }
-
-  .navbar-ul{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .navbar-li{
-    margin-right: 0;
-  }
-
-  .a-navbar{
-    font-size: 14px;
-  }
-
-  .container-footer{
-    height: auto;
-    padding: 20px;
-  }
-
-  .h1-footer{
-    font-size: 22px;
-    text-align: center;
-  }
-
-}
-
+/* BODY */
 body {
   background-color: rgb(72, 5, 5);
+  overflow-x: hidden;
 }
+
 /* MAIN WRAPPER */
 .main-wrapper {
-
   width: 100%;
   max-width: 1700px;
 
@@ -117,10 +54,11 @@ body {
 
   box-shadow:
     0 0 25px rgba(0,0,0,0.5),
-    0 0 30px whitesmoke,;
-  
+    0 0 30px whitesmoke;
+
   aspect-ratio: 9/16;
 }
+
 .slide,
 .slide2 {
   display: none;
@@ -128,34 +66,14 @@ body {
   height: 100%;
   position: absolute;
 }
+
 .side-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.game-card {
-
-  background:
-    rgba(255,255,255,0.08);
-
-  backdrop-filter: blur(10px);
-
-  border-radius: 20px;
-
-  overflow: hidden;
-
-  transition: 0.3s;
-
-  box-shadow:
-    0 8px 20px rgba(0,0,0,0.4);
+  display: block;
 }
 
-.game-card:hover {
-
-  transform:
-    translateY(-10px)
-    scale(1.02);
-}
 /* CONTAINER */
 .container {
   width: 100%;
@@ -176,6 +94,7 @@ body {
 .navbar-li {
   list-style: none;
   margin-right: 20px;
+  transition: 0.3s;
 }
 
 .a-navbar {
@@ -188,7 +107,6 @@ body {
   background-color: crimson;
   padding: 10px;
   border-radius: 8px;
-  transition: 0.3s;
 }
 
 /* HEADER */
@@ -200,11 +118,13 @@ body {
 .game-header h1 {
   font-size: 40px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .game-header p {
-  color:whitesmoke;
+  color: whitesmoke;
   margin-top: 20px;
+  line-height: 1.6;
 }
 
 /* CONTENT */
@@ -224,15 +144,29 @@ body {
 
 /* CARD */
 .game-card {
-  background-color: white;
-  border-radius: 15px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
   transition: 0.3s;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.4);
+
+  background-color: white;
 }
 
 .game-card:hover {
-  transform: translateY(-10px);
+
+  transform:
+    translateY(-10px)
+    scale(1.02);
 }
 
 /* IMAGE */
@@ -240,6 +174,7 @@ body {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  display: block;
 }
 
 /* TEXT */
@@ -265,4 +200,87 @@ body {
 
 .h1-footer {
   color: white;
+}
+
+/* ================================= */
+/* RESPONSIVE MOBILE */
+/* ================================= */
+
+@media screen and (max-width: 768px){
+
+  .main-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  /* slideshow */
+  .side-slideshow{
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    margin: auto;
+  }
+
+  /* navbar */
+  .navbar-ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navbar-li{
+    margin-right: 0;
+  }
+
+  .a-navbar{
+    font-size: 14px;
+  }
+
+  /* header */
+  .game-header{
+    padding: 20px 10px;
+  }
+
+  .game-header h1{
+    font-size: 28px;
+  }
+
+  .game-header p{
+    font-size: 14px;
+  }
+
+  /* content */
+  .game-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  /* card */
+  .game-card{
+    width: 100%;
+  }
+
+  .game-img{
+    height: 200px;
+  }
+
+  /* footer */
+  .container-footer{
+    height: auto;
+    padding: 20px;
+  }
+
+  .h1-footer{
+    font-size: 22px;
+    text-align: center;
+  }
+
 }
