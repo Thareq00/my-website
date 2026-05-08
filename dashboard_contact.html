@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - OKA</title>
+
+  <style>
+    body{
+      font-family: Arial;
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+    }
+
+    h1{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      color: black;
+    }
+
+    th, td{
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th{
+      background: black;
+      color: white;
+    }
+
+    button{
+      padding: 5px 10px;
+      background: crimson;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: darkred;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>📊 Data Contact Masuk</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Email</th>
+      <th>Pesan</th>
+      <th>Waktu</th>
+      <th>Aksi</th>
+    </tr>
+  </thead>
+
+  <tbody id="table-body"></tbody>
+</table>
+
+<button onclick="hapusSemua()">Hapus Semua</button>
+
+<script>
+let data = JSON.parse(localStorage.getItem("contactData")) || [];
+
+const tbody = document.getElementById("table-body");
+
+function tampilData(){
+  tbody.innerHTML = "";
+
+  data.forEach((item, index) => {
+    tbody.innerHTML += `
+      <tr>
+        <td>${index + 1}</td>
+        <td>${item.nama}</td>
+        <td>${item.email}</td>
+        <td>${item.pesan}</td>
+        <td>${item.waktu}</td>
+        <td>
+          <button onclick="hapus(${index})">Hapus</button>
+        </td>
+      </tr>
+    `;
+  });
+}
+
+function hapus(index){
+  data.splice(index, 1);
+  localStorage.setItem("contactData", JSON.stringify(data));
+  tampilData();
+}
+
+function hapusSemua(){
+  localStorage.removeItem("contactData");
+  data = [];
+  tampilData();
+}
+
+tampilData();
+</script>
+
+</body>
+</html>

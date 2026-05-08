@@ -1,0 +1,155 @@
+*,
+html{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ /* CONTAINER */                            
+.navbar-container{
+width: 100%;
+     
+}
+/* NAVBAR */
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(11, 14, 11);
+margin-bottom: 20px;
+}   
+.navbar-ul{ 
+  display: flex;
+  padding: 15px;
+}
+.navbar-li {
+  list-style-type: none;
+  margin-right:20px;
+  
+}
+.navbar-li:hover {
+  background-color: crimson;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.a-navbar{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* CONTENT 1 */
+.container-content {
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  color: white;
+  padding: 80px 40px;
+  text-align: center; 
+  border-radius: 12px;
+  
+}
+
+.container-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container-content .p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+/* CONTENT 2 */
+.container-content1 {
+  width: 80%;
+  margin: auto;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.container-content1 h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+/* TABLE */
+.table-container {
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/*head table*/
+.No {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.Tanggal {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.Jenis {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.QTY {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.Keterangan {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.Nominal {
+  color: white;
+  text-align: right;
+  font-weight: bold;
+
+}
+.sisa-saldo {
+  font-weight: bold;
+  color: white;
+  text-align: right;
+}
+/*fiinish head table*/
+.container-footer{
+  width: 100%;
+  background-color:rgb(11, 14, 11);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.h1-footer{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

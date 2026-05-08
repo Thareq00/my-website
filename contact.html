@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - OKA</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar-container">
+    <div class="container">
+      <ul class="navbar-ul">
+        <li class="navbar-li"><a href="index.html" class="a-navbar">Home</a></li>
+        <li class="navbar-li"><a href="about.html" class="a-navbar">About</a></li>
+        <li class="navbar-li"><a href="contact.html" class="a-navbar">Contact</a></li>
+        <li class="navbar-li"><a href="games.html" class="a-navbar">Games</a></li>
+        <li class="navbar-li"><a href="expense.html" class="a-navbar">Expense</a></li>
+      </ul>
+    </div>
+  </div>
+ <!-- MAIN -->
+  <div class="main-wrapper">
+
+    <!-- SLIDE KIRI -->
+    <div class="side-slideshow">
+
+      <div class="slide fade">
+        <img src="Wallpaper-9.jpg" class="side-img">
+      </div>
+
+      <div class="slide fade">
+        <img src="Wallpaper-10.jpg" class="side-img">
+      </div>
+
+      <div class="slide fade">
+        <img src="Wallpaper-6.jpg" class="side-img">
+      </div>
+
+    </div>
+
+<!-- CONTENT -->
+<div class="main-container">
+  <div class="content-box">
+    <h1 class="h1-content-box">Contact Me</h1>
+
+    <input type="text" id="nama" placeholder="Nama">
+    <div class="error" id="errorNama">Nama tidak boleh kosong</div>
+
+    <input type="email" id="email" placeholder="Email">
+    <div class="error" id="errorEmail">Email tidak boleh kosong</div>
+
+    <textarea id="pesan" placeholder="Pesan"></textarea>
+    <div class="error" id="errorPesan">Pesan tidak boleh kosong</div>
+    
+    <button id="btnKirim">Simpan Data</button>
+
+    <!-- tombol ke dashboard -->
+    <a href="dashboard_contact.html" class="btn-dashboard">📊 Lihat Data Masuk</a>
+  </div>
+</div>
+
+<!-- SLIDE KANAN -->
+    <div class="side-slideshow">
+
+      <div class="slide2 fade">
+        <img src="Wallpaper-10.jpg" class="side-img">
+      </div>
+
+      <div class="slide2 fade">
+        <img src="Wallpaper-6.jpg" class="side-img">
+      </div>
+
+      <div class="slide2 fade">
+        <img src="Wallpaper-9.jpg" class="side-img">
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="container-footer">
+    <h1 class="h1-footer">Welcome Amigos</h1>
+  </div>
+
+  <script src="contact.js"></script>
+<button onclick="tampilData()">🔄 Refresh</button>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*,
+html{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: white;
+ /* CONTAINER */
+.navbar-container{
+width: 100%;
+}
+/* NAVBAR */
+.container{
+background-color: rgb(11, 14, 11);
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+.navbar-ul{ 
+  display: flex;
+  padding: 15px;
+}
+.navbar-li {
+  list-style-type: none;
+  margin-right:20px;
+}
+.navbar-li:hover {
+  background-color: crimson;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.a-navbar{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  }
+/* CONTENT 1 */
+.img-content{
+  width: 25%;
+  height:auto;
+  object-fit: cover;
+  transform: translate(-10px);
+  padding: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.container-content{
+display: flex;
+justify-content: left;
+align-items: left;
+margin-bottom: 20px;
+}
+
+/* CONTENT 2 */
+.container-content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 5, 5);
+  text-align: center;
+  padding: 20px;
+}
+.container-content1 h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.p {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  max-width: 500px;
+}
+/* CONTENT 3 */
+.container-content2 {
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+.title-content2 {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+/* CARD */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.card h2 {
+  margin-bottom: 10px;
+}
+.card p {
+  color: gray;
+}
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-10px);
+  background-color: crimson;
+  color: white;
+}
+.card:hover p {
+  color: white;
+}
+/* FOOTER */
+.container-footer{
+  background-color:rgb(11, 14, 11);
+}
+
+.h1-footer{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
